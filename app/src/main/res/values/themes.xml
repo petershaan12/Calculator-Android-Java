@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Kalkulator" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="button" parent="android:style/Widget.Button">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@drawable/button_shape</item>
+    </style>
+    <style name="buttonDigit" parent="button">
+        <item name="android:textSize">32dp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:fontFamily">@font/poppinsmedium</item>
+    </style>
+    <style name="buttonOperator" parent="button">
+        <item name="android:textSize">32dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/poppinsmedium</item>
+    </style>
+</resources>

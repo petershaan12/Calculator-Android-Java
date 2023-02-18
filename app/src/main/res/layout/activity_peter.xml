@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PeterActivity">
+
+<!--    Dikerjakan Oleh Peter Shaan -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Calculator"
+        android:textSize="23dp"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/psEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:paddingBottom="0dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/grey"
+        android:textSize="42dp"
+        android:background="@null"
+        android:hint="0"
+        android:textColorHint="@color/grey2"
+        app:layout_constraintBottom_toTopOf="@id/psGaris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <View
+        android:id="@+id/psGaris"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <Button
+                android:id="@+id/psBtnC"
+                style="@style/buttonOperator"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="C"
+                android:textColor="@color/red" />
+
+            <Button
+                android:id="@+id/psBtnDelete"
+                style="@style/buttonOperator"
+                android:background="@drawable/ic_delete" />
+
+            <Button
+                android:id="@+id/psBtnPersen"
+                style="@style/buttonOperator"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/psBtnBagi"
+                style="@style/buttonOperator"
+                android:text="÷" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <Button
+                android:id="@+id/psBtn_1"
+                style="@style/buttonDigit"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/psBtn_2"
+                style="@style/buttonDigit"
+                android:text="2"
+
+                />
+
+            <Button
+                android:id="@+id/psBtn_3"
+                style="@style/buttonDigit"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/psBtnKali"
+                style="@style/buttonOperator"
+                android:text="*" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <Button
+                android:id="@+id/psBtn_4"
+                style="@style/buttonDigit"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/psBtn_5"
+                style="@style/buttonDigit"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/psBtn_6"
+                style="@style/buttonDigit"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/psBtnKurang"
+                style="@style/buttonOperator"
+                android:text="-" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <Button
+                android:id="@+id/psBtn_7"
+                style="@style/buttonDigit"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/psBtn_8"
+                style="@style/buttonDigit"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/psBtn_9"
+                style="@style/buttonDigit"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/psBtnTambah"
+                style="@style/buttonOperator"
+                android:text="+" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+
+            <Button
+                android:id="@+id/psBtn_0"
+                style="@style/buttonDigit"
+                android:layout_width="164dp"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/psBtnTitik"
+                style="@style/buttonDigit"
+                android:text="." />
+
+            <Button
+                android:id="@+id/psBtnHasil"
+                style="@style/buttonDigit"
+                android:background="@drawable/button_shape2"
+                android:text="="
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppinsregular"
+                android:text="2181002  - "
+                android:textColor="@color/grey"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Peter Shaan ©"
+                android:textColor="@color/grey"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
